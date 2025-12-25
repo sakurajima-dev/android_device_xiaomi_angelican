@@ -14,9 +14,12 @@
 # limitations under the License.
 #
 
-# TODO: add this file
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Inherit from device makefile
-# $(call inherit-product, device/xiaomi/angelican/device.mk)
+$(call inherit-product, device/xiaomi/angelican/device.mk)
 
 # Inherit some common stuff.
 TARGET_BOOT_ANIMATION_RES := 720
@@ -25,11 +28,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_angelican
 PRODUCT_DEVICE := angelican
-PRODUCT_BRAND := xiaomi
-PRODUCT_MODEL := Redmi 9C NFC
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := M2006C3MNG
+PRODUCT_MANUFACTURER := Xiaomi
 
-# TODO: Update fingerprint
 # Build info
 BUILD_FINGERPRINT := "Redmi/angelican_global/angelican:11/RP1A.200720.011/V12.5.3.0.RCSMIXM:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -40,4 +42,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # TODO: What is this?
 # PRODUCT_GMS_CLIENTID_BASE := android-oppo
-
