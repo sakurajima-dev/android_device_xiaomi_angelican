@@ -1,0 +1,3 @@
+add_lunch_combo lineage_angelican-user
+add_lunch_combo lineage_angelican-userdebug
+add_lunch_combo lineage_angelican-eng
