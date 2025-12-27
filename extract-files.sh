@@ -19,7 +19,7 @@
 set -e
 
 export DEVICE=angelican
-export VENDOR=angelican
+export VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

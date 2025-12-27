@@ -19,7 +19,7 @@
 set -e
 
 export DEVICE=angelican
-export VENDOR=angelican
+export VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2020
 
